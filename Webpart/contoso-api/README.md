@@ -16,4 +16,4 @@ You can verify the Azure Function API is running by browsing to https://func1.mi
 1. Deploy package under (https://YourTenantName.sharepoint.com/sites/apps/AppCatalog/Forms/AllItems.aspx)  
 2. Consent the **"contoso-api-client-side-solution"** from API Management by approving it (https://YourTenantName.sharepoint.com/_layouts/15/online/AdminHome.aspx#/webApiPermissionManagement) ![alt text](https://github.com/ozie02/Learning/blob/master/Webpart/imgs/apiConcent.png?raw=true)  
 3. Browse to your site and add the **"Orders"** webpart (https://YourTenantName.sharepoint.com 
-(https://github.com/ozie02/Learning/blob/master/Webpart/imgs/ordersWebpart.png?raw=true)  
+![alt text](https://github.com/ozie02/Learning/blob/master/Webpart/imgs/ordersWebpart.png?raw=true)  
