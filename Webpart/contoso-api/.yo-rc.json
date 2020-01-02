@@ -1,0 +1,13 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": true,
+    "environment": "spo",
+    "whichFolder": "subdir",
+    "version": "1.9.1",
+    "libraryName": "contoso-api",
+    "libraryId": "ba705246-b0ca-4765-9bcd-db835ee28b1f",
+    "packageManager": "npm",
+    "isDomainIsolated": true,
+    "componentType": "webpart"
+  }
+}
