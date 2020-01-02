@@ -1,6 +1,6 @@
 ## contoso-api
 
-This is where you include your WebPart documentation.
+This Webpart can make a successful API call to a Multi-tenant Azure function based on the example from https://docs.microsoft.com/en-us/sharepoint/dev/spfx/use-aadhttpclient-enterpriseapi-multitenant
 
 ### Building the code
 
