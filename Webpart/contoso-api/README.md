@@ -6,13 +6,14 @@ You can verify the Azure Function API is running by browsing to https://func1.mi
 
 ### Build options
 
-1. npm install - (First time after cloning the code)  
-2. gulp build - (To build the solution)  
-3. gulp bundle - (To bundle solution)  
-4. gulp package-solution - (Solution will be packaged under \contoso-api\sharepoint\solution)  
+1. **npm install** - (First time after cloning the code)  
+2. **gulp build** - (To build the solution)  
+3. **gulp bundle** - (To bundle solution)  
+4. **gulp package-solution** --ship - (Solution will be packaged under \contoso-api\sharepoint\solution)  
 
 
 ### Deployment options
 1. Deploy package under (https://YourTenantName.sharepoint.com/sites/apps/AppCatalog/Forms/AllItems.aspx)  
-2. Consent the **"contoso-api-client-side-solution"** from API Management by approving it (https://YourTenantName.sharepoint.com/_layouts/15/online/AdminHome.aspx#/webApiPermissionManagement)  
-3. Browse to your site and add the **"Orders"** webpart (https://YourTenantName.sharepoint.com)  
+2. Consent the **"contoso-api-client-side-solution"** from API Management by approving it (https://YourTenantName.sharepoint.com/_layouts/15/online/AdminHome.aspx#/webApiPermissionManagement) ![alt text](https://github.com/ozie02/Learning/blob/master/Webpart/imgs/apiConcent.png?raw=true)  
+3. Browse to your site and add the **"Orders"** webpart (https://YourTenantName.sharepoint.com) 
+![alt text](https://github.com/ozie02/Learning/blob/master/Webpart/imgs/ordersWebpart.png?raw=true)  
