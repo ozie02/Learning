@@ -2,6 +2,8 @@
 
 This Extension is not able to make a successful API call to a Multi-tenant Azure function because I am passing the **"this.context"** to child React components (Root --> ReactHeader --> ReactPanel --> ReactOrders)  that would consume the this.context to make an AadHttpClient call. Unfortunelty the call fails which seems a problem with initiating the this.context object even though its included all the way from root via props.
 
+![alt text](https://github.com/ozie02/Learning/blob/master/Extensions/imgs/props.png?raw=true)
+
 You can verify the Azure Function API is running by browsing to https://func1.mintranet.net/api/HttpTrigger2?id=12, first time you try to access the URL a consent message will appear but after that it would just auththicate users from any Azure tenant.
 
 ### Build options
@@ -17,4 +19,4 @@ You can verify the Azure Function API is running by browsing to https://func1.mi
 2. Consent the **"contoso-api-extension-client-side-solution"** from API Management by approving it (https://YourTenantName.sharepoint.com/_layouts/15/online/AdminHome.aspx#/webApiPermissionManagement) ![alt text](https://github.com/ozie02/Learning/blob/master/Extensions/imgs/apiConcent.png?raw=true)  
 3. Browse to your site and click on **"My Orders"** button (https://YourTenantName.sharepoint.com) 
 ![alt text](https://github.com/ozie02/Learning/blob/master/Extensions/imgs/ordersWebpart.png?raw=true)
-4. Unfortunetly it throuws an error as its not able to authenticate ![alt text](https://github.com/ozie02/Learning/blob/master/Extensions/imgs/ConsoleError.png?raw=true)
+4. Unfortunately it throws an error as its not able to authenticate ![alt text](https://github.com/ozie02/Learning/blob/master/Extensions/imgs/ConsoleError.png?raw=true)
