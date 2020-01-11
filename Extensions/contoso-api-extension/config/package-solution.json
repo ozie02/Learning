@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "contoso-api-extension-client-side-solution",
+    "id": "b5b379e5-85ee-4f0a-8c80-d6a5854bd9cf",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": true,
+    "webApiPermissionRequests": [
+      {
+        "resource":"Mintranet-Dev",
+        "scope": "user_impersonation"
+      }
+    ],
+    "features": [
+      {
+        "title": "Application Extension - Deployment of custom action.",
+        "description": "Deploys a custom action with ClientSideComponentId association",
+        "id": "39802a5e-38e7-4a30-8572-24c7d62b5ee3",
+        "version": "1.0.0.0",
+        "assets": {
+          "elementManifests": [
+            "elements.xml"
+          ]
+        }
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/contoso-api-extension.sppkg"
+  }
+}

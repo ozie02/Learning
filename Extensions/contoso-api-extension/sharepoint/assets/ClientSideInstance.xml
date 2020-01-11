@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ClientSideComponentInstance
+        Title="ContosoApiExtension"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ComponentId="33f3ebb9-7aa4-43fa-be5d-340dea1e2e76"
+        Properties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </ClientSideComponentInstance>
+</Elements>

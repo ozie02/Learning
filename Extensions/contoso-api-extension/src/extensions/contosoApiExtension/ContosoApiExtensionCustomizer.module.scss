@@ -1,0 +1,174 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+
+.ms-Label {
+  @include ms-font-xl;
+  font-weight: 600!important;
+  padding-bottom: 10px;
+}
+
+.app {
+  .top {
+    height: 40px;
+    text-align: center;
+    line-height: 2.5;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bottom {
+    height: 40px;
+    text-align: center;
+    line-height: 2.5;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    max-width: 700px;
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .hideElement {
+    display: none;
+  }
+
+  .grid {
+    @include ms-Grid;
+  }
+
+  .row {
+    @include ms-Grid-row;
+    // @include ms-fontColor-white;
+    // background-color: $ms-color-themeDark;
+    // padding: 20px;
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-sm12;
+    @include ms-md6;
+    @include ms-lg6;
+    // @include ms-lg10;
+    // @include ms-xl8;
+    // @include ms-xlPush2;
+    // @include ms-lgPush1;
+  }
+
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+  }
+
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .profileButton {
+    top: 5px;
+    right: 0;
+    position: absolute !important;
+    margin-right: 5px;
+  }
+
+  .button {
+    background-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+  }
+
+  .button:hover {
+    color: #ffffff;
+    background-color: $ms-color-themeDark;
+  }
+
+  .ms-Pivot {
+    background-color: $ms-color-themePrimary;
+    color: white;
+  }
+  .ms-Pivot:hover {
+    background-color: $ms-color-themeDark;
+    color: white;
+  }
+
+  // AppFabric Styles
+  .header {
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+  }
+
+  .textDialog {
+    max-width: 100%;
+    width: 600px;
+    max-height: 100%;
+    height: 600px;
+  }
+  .Card-header {
+    font-size: xx-large;
+    border-bottom: 3px solid #a6a6a6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    margin-top:20px;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+  }
+
+  .CardSub-header {
+    font-size: 20px;
+    font-weight: 600;
+    color: #605e5c;
+    border-bottom: 1px solid #a6a6a6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    margin-top:10px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
+
+  // .ms-Multiselect {
+  //   font-family: Segoe UI WestEuropean, Segoe UI, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  //   -webkit-font-smoothing: antialiased;
+  //   box-sizing: border-box;
+  //   margin: 0;
+  //   padding: 0;
+  //   box-shadow: none;
+  //   color: #333;
+  //   font-size: 14px;
+  //   font-weight: 400;
+  //   margin-bottom: 10px;
+  //   position: relative;
+  //   outline: 0;
+  // }
+  label.ms-Label.multiselect {
+    margin-bottom: 10px;
+  }
+  // .ms-Multiselect-select {
+  //   box-sizing: border-box;
+  //   margin: 0;
+  //   padding: 0;
+  //   box-shadow: none;
+  //   background: #fff;
+  //   border: 1px solid #c8c8c8;
+  //   cursor: pointer;
+  //   display: block;
+  //   width: 100%;
+  //   /* height: 32px; */
+  //   padding: 5px 32px 0 10px;
+  //   position: relative;
+  //   overflow: hidden;
+  // }
+}
