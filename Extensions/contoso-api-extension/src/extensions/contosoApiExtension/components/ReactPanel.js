@@ -9,7 +9,6 @@ export default function ReactPanel(props) {
     var _a = React.useState(false), isOpen = _a[0], setIsOpen = _a[1];
     var openPanel = useConstCallback(function () { return setIsOpen(true); });
     var dismissPanel = useConstCallback(function () { return setIsOpen(false); });
-    var spHttpClient = props.spHttpClient;
     var onRenderFooterContent = useConstCallback(function () { return (React.createElement("div", null,
         React.createElement(PrimaryButton, { onClick: dismissPanel, className: styles.button, styles: buttonStyles }, "Save"),
         React.createElement(DefaultButton, { className: styles.button, onClick: dismissPanel }, "Cancel"))); });
@@ -19,6 +18,6 @@ export default function ReactPanel(props) {
             // Stretch panel content to fill the available height so the footer is positioned
             // at the bottom of the page
             isFooterAtBottom: true },
-            React.createElement(ReactOrders, { context: spHttpClient }))));
+            React.createElement(ReactOrders, { context: props.context }))));
 }
 //# sourceMappingURL=ReactPanel.js.map

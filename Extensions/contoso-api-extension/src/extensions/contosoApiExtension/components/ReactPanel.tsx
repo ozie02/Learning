@@ -14,7 +14,6 @@ export default function ReactPanel(props)  {
 
   const openPanel = useConstCallback(() => setIsOpen(true));
   const dismissPanel = useConstCallback(() => setIsOpen(false));
-  const spHttpClient = props.spHttpClient;
 
   const onRenderFooterContent = useConstCallback(() => (
     <div>
@@ -39,7 +38,7 @@ export default function ReactPanel(props)  {
         // Stretch panel content to fill the available height so the footer is positioned
         // at the bottom of the page
         isFooterAtBottom={true}>
-          <ReactOrders context={spHttpClient}/>
+          <ReactOrders context={props.context}/>
       </Panel>
     </div>
   );

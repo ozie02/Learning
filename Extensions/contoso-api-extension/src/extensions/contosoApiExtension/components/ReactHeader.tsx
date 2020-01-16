@@ -20,7 +20,7 @@ export default class ReactHeader extends React.Component<IReactHeaderProps> {
         <div className={` ${styles.header} ms-fontColor-white`}>
           <div className={styles.top}>
             <i className="ms-Icon ms-Icon--Info" aria-hidden="true"></i> This is the Top
-            <ReactPanel spHttpClient={this.props.context}/>
+            <ReactPanel context={this.props.context}/>
           </div>
         </div>
       </div>

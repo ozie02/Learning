@@ -25,7 +25,7 @@ var ReactHeader = /** @class */ (function (_super) {
                 React.createElement("div", { className: styles.top },
                     React.createElement("i", { className: "ms-Icon ms-Icon--Info", "aria-hidden": "true" }),
                     " This is the Top",
-                    React.createElement(ReactPanel, { spHttpClient: this.props.context })))));
+                    React.createElement(ReactPanel, { context: this.props.context })))));
     };
     return ReactHeader;
 }(React.Component));
