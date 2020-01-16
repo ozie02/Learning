@@ -24,10 +24,12 @@ export default class ReactOrders extends React.Component<IReactOrdersProps, any>
   }
 
   public componentDidMount() {
-    this.ordersClient
-    .get('https://func1.mintranet.net/api/HttpTrigger2?id=12', AadHttpClient.configurations.v1)
-    .then((res: HttpClientResponse): void => {
-      this.setState({myOrders: res.json()});
+    this.authenticateUser().then( () =>{
+      this.ordersClient
+      .get('https://func1.mintranet.net/api/HttpTrigger2?id=12', AadHttpClient.configurations.v1)
+      .then((res: HttpClientResponse): void => {
+        this.setState({myOrders: res.json()});
+      });
     });
   }
   
@@ -43,8 +45,7 @@ export default class ReactOrders extends React.Component<IReactOrdersProps, any>
   }
 
   public render(): React.ReactElement<{}> {
-    this.authenticateUser();
-    return (
+        return (
             <div className={styles.app}>
               <div>
                 <div className="modal-body">

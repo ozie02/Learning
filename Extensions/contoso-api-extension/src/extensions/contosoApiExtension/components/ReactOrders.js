@@ -28,10 +28,12 @@ var ReactOrders = /** @class */ (function (_super) {
     }
     ReactOrders.prototype.componentDidMount = function () {
         var _this = this;
-        this.ordersClient
-            .get('https://func1.mintranet.net/api/HttpTrigger2?id=12', AadHttpClient.configurations.v1)
-            .then(function (res) {
-            _this.setState({ myOrders: res.json() });
+        this.authenticateUser().then(function () {
+            _this.ordersClient
+                .get('https://func1.mintranet.net/api/HttpTrigger2?id=12', AadHttpClient.configurations.v1)
+                .then(function (res) {
+                _this.setState({ myOrders: res.json() });
+            });
         });
     };
     ReactOrders.prototype.authenticateUser = function () {
@@ -46,7 +48,6 @@ var ReactOrders = /** @class */ (function (_super) {
         });
     };
     ReactOrders.prototype.render = function () {
-        this.authenticateUser();
         return (React.createElement("div", { className: styles.app },
             React.createElement("div", null,
                 React.createElement("div", { className: "modal-body" },
