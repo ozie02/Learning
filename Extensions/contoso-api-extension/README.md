@@ -1,4 +1,4 @@
-## contoso-api
+## contoso-api-extension
 
 This Extension is not able to make a successful API call to a Multi-tenant Azure function because I am passing the **"this.context"** to child React components (Root --> ReactHeader --> ReactPanel --> ReactOrders)  that would consume the this.context to make an AadHttpClient call. Unfortunelty the call fails which seems a problem with initiating the this.context object even though its included all the way from root via props.
 
